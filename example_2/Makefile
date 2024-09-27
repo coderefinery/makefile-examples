@@ -6,6 +6,7 @@ vpath %.c src
 	$(CC) $(CFLAGS) -c $< -o $@
 
 hello.exe: hello.o module.o
+	$(CC) $(CFLAGS) $^ -o $@
 
 clean:
 	rm *.o hello.exe

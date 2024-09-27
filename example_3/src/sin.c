@@ -5,5 +5,5 @@
 
 double sin(double x){
    double temp = x - x*x*x/(2*3) + x*x*x*x*x/(2*3*4*5);
-   return x;
+   return temp;
 }

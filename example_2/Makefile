@@ -11,8 +11,8 @@ hello.exe: hello.o module.o
 clean:
 	rm *.o hello.exe
 
-install: hello
+install: hello.exe
 	mkdir -p ./bin/
-	cp hello ./bin/
+	cp hello.exe ./bin/
 
 all: hello.exe
